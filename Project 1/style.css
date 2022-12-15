@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./background_image.jpg);
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container{
+    max-width: 1240px;
+    height: 1036px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#title{
+    font-size: 3.1rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#description{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header{
+    text-align: center;
+}
+
+textarea{
+    resize: none;
+}
+
+#survey-form-container{
+    /* border: 2px solid red; */
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: auto;
+    padding: 30px 40px 30px 40px;
+}
+
+#fname, #age, #mail, #per-content, #feedback{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.input-box{
+    margin-top: 10px;
+
+}
+
+#checkbox, #radio{
+    margin-top: 40px;
+}
+
+#button{
+    background-color: red;
+    /* padding: 10px 50px; */
+    border-radius: 50px;
+    color: white;
+    width: 160px;
+    height: 45px;
+    border: none;
+    
+}
+
+.form-submit{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#radio{
+    margin-bottom: 20px;
+}
