@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container1{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 100px;
+}
+
+.head1{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+
+.nav1{
+    display: grid;
+    justify-content: start;
+    grid-template-columns: auto auto;
+    margin: 20px;
+    column-gap: 30px;
+}
+
+.nav2{
+    display: grid;
+    justify-content: end;
+    grid-template-columns: auto auto auto auto;
+    margin: 20px;
+    column-gap: 30px;
+}
+
+
+
+
+.container2{
+    display: grid;
+    place-content: center;
+}
+
+.ortala{
+    display: grid;
+    align-content: center;
+}
+
+.concat{
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    
+}
+
