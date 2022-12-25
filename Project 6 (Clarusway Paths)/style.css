@@ -28,6 +28,11 @@ main{
     height: 250px;
 }
 
+#pic:hover{
+    width: 500px;
+    height: auto;
+}
+
 .sec-title{
     color: orange;
     font-size: 32px;
@@ -62,8 +67,12 @@ main{
     width: 130px;
     height: 40px;
     text-align: center;
-    vertical-align: auto;
     text-decoration: none;
     border-radius: 5px;
-    
+    font-weight: bold;
+}
+
+.but:hover{
+    width: 165px;
+    height: 50px;
 }
