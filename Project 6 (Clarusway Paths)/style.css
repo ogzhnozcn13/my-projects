@@ -4,8 +4,49 @@
     box-sizing: border-box;
 }
 
-main{
-    display: grid;
-    grid-template-columns: auto;
+body{
+    background-image: linear-gradient(to left, blue, green);
 }
 
+.head{
+    text-align: center;
+    color: white;
+    font-size: 120px;
+    font-weight: 700px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pic{
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+
+.sec-title{
+    color: orange;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.par{
+    color: white;
+    font-size: 26px;
+}
+
+.one, .two, .three, .four, .five, .six, .seven{
+    width: 80%;
+    height: 300px;
+    border: 1px solid none;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.181);
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px;
+    
+}
