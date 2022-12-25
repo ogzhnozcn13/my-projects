@@ -14,6 +14,7 @@ body{
     font-size: 120px;
     font-weight: 700px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
 main{
@@ -24,19 +25,20 @@ main{
 
 #pic{
     width: 300px;
-    height: 200px;
-    float: left;
+    height: 250px;
 }
 
 .sec-title{
     color: orange;
     font-size: 32px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
 }
 
 .par{
     color: white;
-    font-size: 26px;
+    font-size: 19px;
+    margin-left: 10px;
 }
 
 .one, .two, .three, .four, .five, .six, .seven{
@@ -48,5 +50,20 @@ main{
     background-color: rgba(255, 255, 255, 0.181);
     border-radius: 5px;
     box-shadow: 5px 5px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.but{
+    float: right;
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    vertical-align: auto;
+    text-decoration: none;
+    border-radius: 5px;
     
 }
