@@ -11,9 +11,11 @@ body{
 .head{
     text-align: center;
     color: white;
-    font-size: 120px;
+    font-size: 90px;
     font-weight: 700px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 50px;
+    text-shadow: 10px 10px 10px  rgb(0, 0, 0);
     
 }
 
