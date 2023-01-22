@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* .part1{
+    background-image: url(./img/nature.jpeg);
+}
+.part2{
+    background-image: url(./img/tiger.jpg);
+}
+.part3{
+    background-image: url(./img/eagle.jpg);
+}
+.part4{
+    background-image: url(./img/dolphin.jpg);
+}
+.part5{
+    background-image: url(./img/nature.jpeg);
+} */
+
+.part img{
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    /* background-attachment: fixed; */
+    
+}
+
+/* .container{
+    display: flex;
+} */
+
+h1{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: darkgreen;
+    color: white;
+    border: 1px solid red;
+    text-align: center;
+    padding: 10px;
+    margin: 100px 500px;
+    
+}
+
