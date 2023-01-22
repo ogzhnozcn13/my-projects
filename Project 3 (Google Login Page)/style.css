@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 header{
     display: flex;
     justify-content: space-between;
@@ -41,27 +42,52 @@ a{
     background-color:#4285f4;
     color:white;
     border:none;
-    border-radius: 4px;
-    width:70px; 
-    height: 30px;
+    border-radius: 3px;
+    width:90px; 
+    height: 40px;
     font-weight: 600;
     cursor: pointer;
+    font-size: medium;
 }
 
 .logo{
     display: block;
     margin: auto;
     text-align: center;
-    padding-top: 300px;
-
+    padding-top: 220px;
+    padding-bottom: 20px;
 }
+
+.logo img{
+    width: 400px;
+    height: auto;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 
 .search{
     border: 1px solid rgba(128, 128, 128, 0.56);
-    display: block;
-    text-align: center;
-    margin: 0px 800px;
+    margin-right: auto;
+    margin-left: auto;
     border-radius: 50px;
+    width: 650px;
+    height: 60px;
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#search-stick{
+    width: 470px;
+    border-style: none;
+    height: 50px;
+    
 }
 
 .buttons{
@@ -76,14 +102,45 @@ a{
 .button-stick{
     padding: 10px 20px;
     margin: 10px;
-    border-radius: 5px;
-    border: none;
+    background-color:#c0c0c091;
+    color:rgb(0, 0, 0);
+    border:none;
+    border-radius: 3px;
+    width: 200px; 
+    height: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: medium;
 }
 
-#google{
-    width: 350px;
-    margin-bottom: 5px;
-    padding-top: 8px;
-    border-style: none;
+p{
+    font-size: 21.6px;
+}
 
+p a{
+    text-decoration: underline;
+}
+
+footer{
+    margin-top: 330px;
+    background-color: rgba(220, 220, 220, 0.481);
+}
+
+.foot{
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.392);
+    color: rgb(85, 85, 85);
+}
+
+.foot1 p{
+    margin-left: 10px;
+}
+
+.foot2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot2 a{
+    color: rgb(85, 85, 85);
 }
