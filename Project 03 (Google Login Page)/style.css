@@ -87,7 +87,8 @@ main{
     width: 470px;
     border-style: none;
     height: 50px;
-    
+    outline: none;
+    font-size: 30px;
 }
 
 .buttons{
