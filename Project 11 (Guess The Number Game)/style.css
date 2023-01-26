@@ -24,8 +24,13 @@ h1{
     font-size: 40px;
 }
 
+
+
+
+
+
 .input-con{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     height: 200px;
@@ -64,8 +69,13 @@ h1{
     cursor: pointer;
 }
 
+
+
+
+
+
 .img-con{
-    background-image: url(./numbers.png);
+    background-image: url(./img/numbers.png);
     height: 300px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -82,5 +92,44 @@ h1{
 }
 
 .live-con{
+    display: none;
     font-size: 25px;
+}
+
+
+
+
+
+.btn-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.btn-con button{
+    width: 150px;
+    height: 150px;
+    border-radius: 70px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    background-color: forestgreen;
+    color: white;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.btn-con button:hover{
+    background-color: rgb(127, 255, 47);
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+.restart{
+    display: none; 
 }
