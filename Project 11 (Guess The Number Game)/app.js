@@ -50,15 +50,15 @@ startGame.addEventListener('click', () => {
 restartGame.addEventListener('click', () => {
     let randomNumber
     randomNumber = Math.ceil(Math.random() * 100)
+    let live = 6
+    liveElement.innerText = live
+    live--
     imgCon.style.backgroundImage = 'url("./img/numbers.png")'
     butonCon.style.display = 'none'
     inputCon.style.display = 'flex'
     input.value = ''
     input.focus()
     result.innerText = 'Write the number!'
-    let live = 6
-    liveElement.innerText = live
-    live--
 })
 
 
