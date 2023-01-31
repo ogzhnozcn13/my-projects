@@ -41,7 +41,7 @@ addBtn.addEventListener("click", () => {
 
 
 function createListElement(newTodo) {
-    const {id, completed, text} =newTodo
+    const {id, completed, text} = newTodo
 
     const li = document.createElement("li")                 //* li attribute'lerini oluşturmak için
     li.setAttribute("id", id)                               //* li ye "id" adında id verdik (newTodo.id)
@@ -51,14 +51,14 @@ function createListElement(newTodo) {
     okIcon.setAttribute("class", "fas fa-check")            //* i'ye class oluşturuldu
     li.appendChild(okIcon);                                 //* tik'i li'nin içine child olrak konumlandırdık
 
-    const deleteIcon = document.createElement("i")
-    deleteIcon.setAttribute("class", "fas fa-trash")
-    li.appendChild(deleteIcon);
-
     const textP = document.createElement("p")               //* input'a yazılan text için p elemnti oluşturduk
     const pTextNode = document.createTextNode(text)         //* newTodo object'inin içindeki text'i node yaparak, değişken atadık
     textP.appendChild(pTextNode)                            //* node'u p'nin içine child olarak konumlandırdık
     li.appendChild(textP);                                  //* p'yi, li'nin içine child olrak konumlandırdık
+
+    const deleteIcon = document.createElement("i")
+    deleteIcon.setAttribute("class", "fas fa-trash")
+    li.appendChild(deleteIcon);
 
     todoUl.appendChild(li)                                  //* li'yi ul'nin içine yolladık
 }
@@ -67,15 +67,15 @@ function createListElement(newTodo) {
 
 
 
-todoUl.addEventListener('click', () => {                        //* ul'nin içindeki tik'lere ve çöp kovalarına tıklandığında işlem yapmak için
+todoUl.addEventListener('click', (e) => {                        //* ul'nin içindeki tik'lere ve çöp kovalarına tıklandığında işlem yapmak için
     const id = e.target.parentElement.getAttribute("id");
 
     if(e.target.classList.contains("fa-trash")){                //* tıklanılan yerin class'ı fa-trash (çöp kovası) ise,
-        e.target.parentElement.remove()                         //* ul'nin içindeki istenilen li silinir
+        e.target.parentElement.remove("checked")                //* ul'nin içindeki istenilen li silinir
         todos.filter((todo) => todo.id !== Number(id))          //* tıkladığım yerin id'si array'in içindeki bir id'ye eşit değilse (arrayin içinden siler.)
         localStorage.setItem("TODOS", JSON.stringify(todos))    //* local'de güncelleme (silme) yapar.
     }
-    else if(e.target.classList.contains("fa-trash")){
+    else if(e.target.classList.contains("fa-check")){
         e.target.parentElement.classList.toggle("checked")      //* tıklanılan yerin parent'ının class'ını "değilleme" yapar, (false'u true; true ise false)
         todos.map((todo, index) => {
             if(todo.id == id){
