@@ -6,6 +6,7 @@
 
 body{
     background-image: linear-gradient(159deg, rgba(192, 220, 231, 0.666),rgb(156, 207, 143));
+    /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
     background-repeat: no-repeat;
     height: 100vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
